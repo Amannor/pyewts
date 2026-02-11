@@ -1,43 +1,9 @@
-#! /usr/bin/env python
+#!/usr/bin/env python
 # -*- coding: utf8 -*-
 
-from __future__ import print_function
+"""Minimal setup.py for backwards compatibility. All metadata is in pyproject.toml."""
 
-import os
-import setuptools
-from pkg_resources import parse_version
+from setuptools import setup
 
-assert(parse_version(setuptools.__version__) >= parse_version("38.6.0"))
-
-def read(fname):
-    with open(os.path.join(os.path.dirname(__file__), fname), encoding="utf-8") as f:
-        return f.read()
-
-setuptools.setup(
-    name="pyewts",
-    version="0.2.0",  #edit version in __init__.py
-    author="Esukhia development team",
-    author_email="esukhiadev@gmail.com",
-    description="Python utils for EWTS conversion from / to Unicode",
-    license="Apache2",
-    keywords="tibetan",
-    url="https://github.com/Esukhia/pyewts",
-    packages=setuptools.find_packages(),
-    long_description=read('README.md'),
-    long_description_content_type="text/markdown",
-    project_urls={
-        'Source': 'https://github.com/Esukhia/pyewts',
-        'Tracker': 'https://github.com/Esukhia/pyewts/issues',
-    },
-    classifiers=[
-        "Development Status :: 3 - Alpha",
-        "Topic :: Text Processing :: Linguistic",
-        "Programming Language :: Python :: 3",
-        "Operating System :: OS Independent",
-        "Intended Audience :: Developers",
-        "Intended Audience :: Science/Research",
-        "License :: OSI Approved :: Apache Software License",
-        "Natural Language :: Tibetan"
-    ],
-    python_requires='>=3.4'
-)
+if __name__ == "__main__":
+    setup()

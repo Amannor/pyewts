@@ -112,10 +112,17 @@ Build the source dist:
 
 ```
 rm -rf dist/
-python3 setup.py clean sdist
+python -m build
 ```
 
-and upload on twine (version >= `1.11.0`) with:
+or with pip:
+
+```
+pip install build
+python -m build
+```
+
+Upload on twine (version >= `1.11.0`) with:
 
 ```
 twine upload dist/*

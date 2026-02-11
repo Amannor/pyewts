@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyewts"
+version = "0.2.0"
+description = "Python utils for EWTS conversion from / to Unicode"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Esukhia development team", email = "esukhiadev@gmail.com"}
+]
+keywords = ["tibetan", "ewts", "unicode", "wylie"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Topic :: Text Processing :: Linguistic",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: Tibetan",
+]
+requires-python = ">=3.6"
+
+[project.urls]
+Homepage = "https://github.com/Esukhia/pyewts"
+Documentation = "https://github.com/Esukhia/pyewts"
+Repository = "https://github.com/Esukhia/pyewts"
+"Bug Tracker" = "https://github.com/Esukhia/pyewts/issues"
+
+[tool.setuptools.packages.find]
+include = ["pyewts*"]
